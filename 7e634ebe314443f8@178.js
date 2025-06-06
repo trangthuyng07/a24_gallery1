@@ -5,7 +5,7 @@ $0
 function _filmSectionCarousel(datasets,html,d3)
 {
   const width = 1000;
-  const defaultHeight = 800
+  const defaultHeight = 780
   
 
   const sections = [
@@ -151,8 +151,8 @@ function _filmSectionCarousel(datasets,html,d3)
   const dots = html`<div style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;"></div>`;
   const dotElements = sections.map((_, i) => {
     const dot = html`<span style="
-      width: 10px;
-      height: 10px;
+      width: 8px;
+      height: 8px;
       border-radius: 50%;
       background: ${i === current ? '#fff' : '#666'};
       cursor: pointer;
