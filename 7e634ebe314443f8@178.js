@@ -4,8 +4,8 @@ $0
 
 function _filmSectionCarousel(datasets,html,d3)
 {
-  const width = 1100;
-  const defaultHeight = 1450
+  const width = 1000;
+  const defaultHeight = 800
   
 
   const sections = [
@@ -35,10 +35,10 @@ function _filmSectionCarousel(datasets,html,d3)
 
     const slide = html`
       <div style="min-width: ${width}px; max-width: ${width}px; height: ${slideHeight}px; box-sizing: border-box; padding: 12px; background: #000; color: white; font-family: Inter, sans-serif;">
-        <div style="font-size: 35px; font-weight: 600; margin-bottom: 12px;">${title}</div>
+        <div style="font-size: 30px; font-weight: 600; margin-bottom: 12px;">${title}</div>
         <div style="
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
           gap: 14px;
           max-height: ${maxGridHeight}px;
           overflow-y: auto;
@@ -71,7 +71,7 @@ function _filmSectionCarousel(datasets,html,d3)
                 background: linear-gradient(to top, rgba(0,0,0,0.75), transparent);
                 color: white;
                 font-weight: 600;
-                font-size: 22px;
+                font-size: 20px;
               ">
                 ${movie.title || "Untitled"}
               </div>
@@ -84,7 +84,7 @@ function _filmSectionCarousel(datasets,html,d3)
                 background: rgba(20,20,20,0.95);
                 color: white;
                 padding: 16px;
-                font-size: 18px;
+                font-size: 14px;
                 line-height: 1.5;
                 z-index: 5;
                 font-family: Inter, sans-serif;
