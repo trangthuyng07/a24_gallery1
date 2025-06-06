@@ -38,7 +38,7 @@ function _filmSectionCarousel(datasets,html,d3)
         <div style="font-size: 30px; font-weight: 600; margin-bottom: 12px;">${title}</div>
         <div style="
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
           gap: 14px;
           max-height: ${maxGridHeight}px;
           overflow-y: auto;
